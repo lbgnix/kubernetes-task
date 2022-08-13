@@ -25,3 +25,13 @@ kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
 
 kubectl rollout status deploy/httpd-frontend
 ```
+![image](https://user-images.githubusercontent.com/26162869/184503119-359fe073-c273-4605-86c2-dee6c69de3e0.png)
+
+When you wish to deploy an application in Kubernetes, you usually define three components:
+
+A Deployment — which is a recipe for creating copies of your application.
+A Service — an internal load balancer that routes the traffic to Pods.
+An Ingress — a description of how the traffic should flow from outside the cluster to your Service.
+Here's a quick visual recap.
+
+https://learnk8s.io/troubleshooting-deployments
